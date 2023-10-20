@@ -10,12 +10,18 @@ import {
   Paragraph,
   AutoInfo,
 } from "./MainStyledComponent";
+
 import copySvg from "../../images/copy.svg";
 import kresloSvg from "../../images/kreslo.svg";
 import kresloSvg2 from "../../images/kreslo2.svg";
 import transmissionSvg from "../../images/transmission.svg";
 import kvSvg from "../../images/kv.svg";
+import whatsappSvg from "../../images/whatsapp.svg";
+import facebookSvg from "../../images/facebook.svg";
+import emailSvg from "../../images/email.svg";
+
 import { Hero } from "../Hero/Hero";
+import { Link } from "react-router-dom";
 
 export const Main = () => {
   return (
@@ -85,6 +91,42 @@ export const Main = () => {
         <div>
           <Price>49 338,00 €</Price>
           <Paragraph>inkl. 19% MwSt.</Paragraph>
+          <ul
+            style={{
+              display: "flex",
+              marginTop: "40px",
+              gap: "30px",
+              justifyContent: "flex-end",
+            }}
+          >
+            <li>
+              <Link>
+                <img
+                  src={whatsappSvg}
+                  alt="Whatsapp"
+                  style={{ width: "30px", height: "30px" }}
+                ></img>
+              </Link>
+            </li>
+            <li>
+              <Link>
+                <img
+                  src={facebookSvg}
+                  alt="Facebook"
+                  style={{ width: "30px", height: "30px" }}
+                ></img>
+              </Link>
+            </li>
+            <li>
+              <Link>
+                <img
+                  src={emailSvg}
+                  alt="Email"
+                  style={{ width: "30px", height: "30px" }}
+                ></img>
+              </Link>
+            </li>
+          </ul>
         </div>
       </AutoInfo>
       <Hero />

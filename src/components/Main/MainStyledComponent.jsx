@@ -5,17 +5,17 @@ export const Container = styled.main`
   margin-top: 60.5px;
   margin-left: auto;
   margin-right: auto;
-  /* @media screen and (min-width: 1862px) {
-    width: 1070px;
-  } */
 `;
 
 export const AutoInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 1070px;
+
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1400px) {
+    width: 1070px;
+  }
 `;
 
 export const NameAuto = styled.h2`
