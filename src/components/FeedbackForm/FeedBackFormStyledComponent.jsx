@@ -73,7 +73,6 @@ export const CheckboxModal = styled(Field)`
 
   &:checked {
     background-image: url("${checkSvg}");
-    /* background-color: red; */
     background-size: contain;
     background-origin: border-box;
   }

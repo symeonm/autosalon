@@ -1,14 +1,21 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.main`
+  width: 100%;
+  margin-top: 60.5px;
+  margin-left: auto;
+  margin-right: auto;
+  /* @media screen and (min-width: 1862px) {
+    width: 1070px;
+  } */
+`;
+
+export const AutoInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  @media screen and (min-width: 1862px) {
-    margin-top: 60.5px;
-    max-width: 1070px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  width: 1070px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const NameAuto = styled.h2`

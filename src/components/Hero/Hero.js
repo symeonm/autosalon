@@ -17,7 +17,7 @@ import { NavLink } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <div className="container">
+    <div>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

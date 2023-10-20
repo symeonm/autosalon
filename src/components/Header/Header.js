@@ -4,18 +4,25 @@ import {
   StyledLink,
   NavList,
   VerticalLine,
+  BurgerButton,
+  BurgerIcon,
+  SectionNav,
 } from "./HeaderStyledComponent";
 
 import logoSvg from "../../images/logo.svg";
 import languageSvg from "../../images/language.svg";
 import chevronDown from "../../images/chevron-down.svg";
+
 export const Header = () => {
   return (
     <SectionHeader>
       <div>
         <LogoCompany src={logoSvg} alt="Logo Company"></LogoCompany>
       </div>
-      <div>
+      <BurgerButton>
+        <BurgerIcon />
+      </BurgerButton>
+      <SectionNav>
         <nav>
           <NavList>
             <li>
@@ -69,7 +76,7 @@ export const Header = () => {
           </NavList>
           <VerticalLine></VerticalLine>
         </nav>
-      </div>
+      </SectionNav>
     </SectionHeader>
   );
 };

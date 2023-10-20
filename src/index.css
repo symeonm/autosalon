@@ -51,7 +51,9 @@ body {
 }
 
 .swiper {
+  width: 100%;
   height: 450px;
   position: relative;
   z-index: 0;
+  margin: 0;
 }

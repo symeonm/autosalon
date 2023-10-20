@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-export const SectionHeader = styled.div`
+export const SectionHeader = styled.header`
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -9,9 +10,16 @@ export const SectionHeader = styled.div`
   justify-content: space-between;
   border: 1px solid var(--Border-Color-Light, #dfe2ed);
   background: var(--Light-Color, #fff);
-  @media screen and (min-width: 1862px) {
-    max-width: 1862px;
+
+  @media screen and (min-width: 335px) {
+    width: 100%;
     padding: 20px 140px;
+  }
+`;
+
+export const SectionNav = styled.div`
+  @media screen and (max-width: 1400px) {
+    display: none;
   }
 `;
 
@@ -41,4 +49,26 @@ export const VerticalLine = styled.div`
   width: 1px;
   align-self: stretch;
   background: var(--Border-Color-Light, #dfe2ed);
+`;
+
+export const BurgerButton = styled.button`
+  background: none;
+  border: 0ch;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 335px) {
+    display: block;
+  }
+  @media screen and (min-width: 1400px) {
+    display: none;
+  }
+`;
+
+export const BurgerIcon = styled(RxHamburgerMenu)`
+  width: 34px;
+  height: 34px;
+  &:active {
+    color: #213584;
+  }
 `;

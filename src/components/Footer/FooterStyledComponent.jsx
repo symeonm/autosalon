@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionFooter = styled.div`
+export const SectionFooter = styled.footer`
   margin-top: 38px;
   margin-left: auto;
   margin-right: auto;
