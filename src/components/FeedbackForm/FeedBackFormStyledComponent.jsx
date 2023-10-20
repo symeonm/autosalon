@@ -64,7 +64,7 @@ export const TextForm = styled.label`
 `;
 
 export const CheckboxModal = styled(Field)`
-  width: 100px;
+  width: 110px;
   height: 28px;
   border: 1px solid #2b6364;
   border-radius: 50%;
