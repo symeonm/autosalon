@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Field } from "formik";
+import checkSvg from "../../images/check.svg";
 
 export const FeedBackModalContainer = styled.div`
   display: flex;
@@ -61,7 +62,6 @@ export const TextForm = styled.label`
   font-weight: 400;
   line-height: 150%;
 `;
-// export const Checked = styled.img``;
 
 export const CheckboxModal = styled(Field)`
   width: 100px;
@@ -72,7 +72,7 @@ export const CheckboxModal = styled(Field)`
   appearance: none;
 
   &:checked {
-    background-image: url("../../images/fi_chek.svg");
+    background-image: url("${checkSvg}");
     /* background-color: red; */
     background-size: contain;
     background-origin: border-box;

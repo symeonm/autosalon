@@ -7,7 +7,7 @@ import {
   TextForm,
   CheckboxModal,
 } from "./FeedBackFormStyledComponent";
-// import cdcd from "../../images/fi_chek.svg";
+
 export const FeedBackForm = () => {
   const initialValues = { vorname: "", nachname: "", telefon: "", email: "" };
 
