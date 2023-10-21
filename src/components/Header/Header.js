@@ -12,16 +12,27 @@ import {
 import logoSvg from "../../images/logo.svg";
 import languageSvg from "../../images/language.svg";
 import chevronDown from "../../images/chevron-down.svg";
+import { useState } from "react";
+import SideBar from "../Sidebar/Sidebar";
 
 export const Header = () => {
+  const [isOpenSidebar, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpenSidebar);
+  };
+
   return (
     <SectionHeader>
       <div>
         <LogoCompany src={logoSvg} alt="Logo Company"></LogoCompany>
       </div>
-      <BurgerButton>
+      <BurgerButton onClick={toggleSidebar}>
         <BurgerIcon />
       </BurgerButton>
+      {isOpenSidebar && (
+        <SideBar toggleSidebar={toggleSidebar} isOpenSidebar={isOpenSidebar} />
+      )}
       <SectionNav>
         <nav>
           <NavList>
