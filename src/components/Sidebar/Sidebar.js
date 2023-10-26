@@ -1,6 +1,7 @@
 // import LogoutBtn from "./LogoutBtn/LogoutBtn";
 import { RxCross1 } from "react-icons/rx";
-
+import languageSvg from "../../images/language.svg";
+import chevronDown from "../../images/chevron-down.svg";
 import {
   AsideSidebar,
   CloseBtn,
@@ -59,6 +60,42 @@ export default function SideBar({ toggleSidebar }) {
             }}
           >
             <StyledLinkSidebar>Kontakt</StyledLinkSidebar>
+          </li>
+          <li
+            style={{
+              paddingTop: "30px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={languageSvg}
+              alt="Language"
+              style={{ width: "34px", height: "34px", marginRight: "10px" }}
+            ></img>
+            <p
+              style={{
+                color: "var(--Dark-Color, #000)",
+                fontFamily: "Roboto",
+                fontSize: "30px",
+              }}
+            >
+              Deutsch
+            </p>
+            <button
+              style={{
+                marginLeft: "10px",
+              }}
+            >
+              <img
+                src={chevronDown}
+                alt="Choose a language"
+                style={{
+                  width: "20px",
+                  height: "20px",
+                }}
+              ></img>
+            </button>
           </li>
         </SidebarList>
       </nav>

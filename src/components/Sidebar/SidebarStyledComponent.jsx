@@ -32,7 +32,6 @@ export const CloseBtn = styled.button`
 export const SidebarList = styled.ul`
   display: flex;
   flex-direction: column;
-
   margin-top: 60px;
 `;
 
