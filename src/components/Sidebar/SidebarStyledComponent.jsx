@@ -1,4 +1,6 @@
-.sidebar {
+import styled from "styled-components";
+
+export const AsideSidebar = styled.aside`
   position: fixed; /*for button*/
   right: 0px;
   top: 0px;
@@ -11,7 +13,7 @@
   height: 100%;
   max-width: 350px;
   width: 100%;
-}
+`;
 
 /* @media screen and (min-width: 335px) {
   .sidebar.openSidebar {
@@ -23,7 +25,7 @@
   }
 } */
 
-.close__btn {
+export const CloseBtn = styled.button`
   position: absolute;
   display: flex;
   align-items: center;
@@ -34,16 +36,4 @@
   padding: 0;
 
   cursor: pointer;
-}
-
-.close__icon {
-  width: 24px;
-  height: 24px;
-  background-color: #ffffff;
-  color: black;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close__icon:hover {
-  color: var(--user-nav-item-hover-color); /*#3e85f3*/
-}
+`;
