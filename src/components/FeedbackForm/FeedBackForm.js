@@ -1,4 +1,4 @@
-import { Form, Formik } from "formik";
+import { Formik } from "formik";
 import {
   FeedBackInput,
   FeedBackModalContainer,
@@ -6,6 +6,8 @@ import {
   TitleForm,
   TextForm,
   CheckboxModal,
+  MobileModal,
+  MobileForm,
 } from "./FeedBackFormStyledComponent";
 
 export const FeedBackForm = () => {
@@ -15,8 +17,8 @@ export const FeedBackForm = () => {
     <FeedBackModalContainer>
       <TitleForm>Wir senden Ihnen die Datei per E-Mail</TitleForm>
       <Formik initialValues={initialValues}>
-        <Form>
-          <div
+        <MobileForm>
+          <MobileModal
             style={{
               width: "100%",
               display: "flex",
@@ -91,7 +93,7 @@ export const FeedBackForm = () => {
                 ></FeedBackInput>
               </label>
             </div>
-          </div>
+          </MobileModal>
 
           <div style={{ padding: "20px", marginTop: "30px" }}>
             <TextForm style={{ display: "flex" }}>
@@ -142,7 +144,7 @@ export const FeedBackForm = () => {
               Senden
             </button>
           </ModalButton>
-        </Form>
+        </MobileForm>
       </Formik>
     </FeedBackModalContainer>
   );

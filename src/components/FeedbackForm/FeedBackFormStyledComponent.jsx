@@ -1,15 +1,44 @@
 import styled from "styled-components";
 import { Field } from "formik";
 import checkSvg from "../../images/check.svg";
+import { Form } from "formik";
 
 export const FeedBackModalContainer = styled.div`
   display: flex;
-  width: 773px;
+
   padding: 40px 40px 20px 40px;
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid #dfe2ed;
   background: #fff;
+
+  @media screen and (min-width: 335px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 600px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 800px) {
+    width: 773px;
+  }
+`;
+
+export const MobileForm = styled(Form)`
+  width: 100%;
+`;
+
+export const MobileModal = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media screen and (max-width: 600px) {
+    width: 450px;
+    flex-direction: column;
+  }
 `;
 
 export const TitleForm = styled.h3`
@@ -64,8 +93,6 @@ export const TextForm = styled.label`
 `;
 
 export const CheckboxModal = styled(Field)`
-  width: 110px;
-  height: 28px;
   border: 1px solid #2b6364;
   border-radius: 50%;
   margin: 0 10px 0 0;
@@ -75,5 +102,19 @@ export const CheckboxModal = styled(Field)`
     background-image: url("${checkSvg}");
     background-size: contain;
     background-origin: border-box;
+  }
+
+  @media screen and (min-width: 335px) {
+    width: 230px;
+    height: 18px;
+  }
+
+  @media screen and (min-width: 600px) {
+    width: 230px;
+    height: 28px;
+  }
+  @media screen and (min-width: 800px) {
+    width: 110px;
+    height: 28px;
   }
 `;
