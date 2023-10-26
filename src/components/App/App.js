@@ -1,4 +1,3 @@
-import { AddButton } from "../Buttons/AddButton/AddButton";
 import { ChatButton } from "../Buttons/ChatButton/ChatButton";
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
@@ -12,7 +11,6 @@ function App() {
       <Main />
       <Footer />
       <ChatButton />
-      <AddButton />
     </div>
   );
 }

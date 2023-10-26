@@ -19,6 +19,10 @@ export const SectionFooter = styled.footer`
 export const FooterList = styled.ul`
   display: flex;
   gap: 30px;
+
+  @media screen and (max-width: 970px) {
+    flex-direction: column;
+  }
 `;
 
 export const ButtonFooter = styled.button`
@@ -36,4 +40,8 @@ export const ButtonFooter = styled.button`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media screen and (max-width: 970px) {
+    width: 100%;
+  }
 `;

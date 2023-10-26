@@ -8,8 +8,9 @@ import "swiper/css/navigation";
 import slide1 from "../../images/desktopImages/slide1.png";
 import slide2 from "../../images/desktopImages/slideLeft.png";
 import slide3 from "../../images/desktopImages/slide3.png";
-import { Paragraph } from "./HeroStyledComponent";
+import { CentralSlider, Paragraph } from "./HeroStyledComponent";
 import { NavLink } from "react-router-dom";
+import { AddButton } from "../Buttons/AddButton/AddButton";
 
 // import EffectCoverflow from "swiper";
 // import Pagination from "swiper";
@@ -34,25 +35,26 @@ export const Hero = () => {
         className="swiper"
       >
         <SwiperSlide>
+          <AddButton />
           <img
             src={slide2}
             alt="slide_image"
-            style={{ position: "absolute", left: "0px" }}
-          />
-          <img
-            src={slide1}
-            alt="slide_image"
             style={{
-              position: "absolute",
-              left: "0",
-              right: "0",
-              margin: "auto",
+              // position: "absolute",
+              // left: "0px",
+              width: "27%",
             }}
           />
+          <CentralSlider src={slide1} alt="slide_image" />
           <img
             src={slide3}
             alt="slide_image"
-            style={{ position: "absolute", right: "0px" }}
+            style={{
+              // position: "absolute",
+              // right: "0px",
+              width: "27%",
+              // height: "100%",
+            }}
           />
         </SwiperSlide>
       </Swiper>

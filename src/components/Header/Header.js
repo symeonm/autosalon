@@ -3,7 +3,6 @@ import {
   SectionHeader,
   StyledLink,
   NavList,
-  VerticalLine,
   BurgerButton,
   BurgerIcon,
   SectionNav,
@@ -85,7 +84,6 @@ export const Header = () => {
               </button>
             </li>
           </NavList>
-          <VerticalLine></VerticalLine>
         </nav>
       </SectionNav>
     </SectionHeader>

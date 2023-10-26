@@ -52,8 +52,45 @@ body {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  margin-top: 40px;
   position: relative;
   z-index: 0;
   margin: 0;
+}
+@media screen and (min-width: 335px) {
+  .swiper {
+    justify-content: space-between;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .swiper {
+    justify-content: space-between;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .swiper {
+    justify-content: space-between;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .swiper {
+    justify-content: space-between;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .swiper {
+    height: 500px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  height: "100%";
 }

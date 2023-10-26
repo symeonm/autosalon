@@ -8,6 +8,7 @@ export const Paragraph = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  margin-top: 18px;
 
   max-width: 960px;
   max-height: 48px;
@@ -18,4 +19,24 @@ export const Paragraph = styled.p`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+`;
+
+export const CentralSlider = styled.img`
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 335px) {
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 `;

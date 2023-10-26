@@ -9,6 +9,10 @@ import {
   Price,
   Paragraph,
   AutoInfo,
+  ListSvg,
+  ListSvgItem,
+  PriceInfo,
+  SocialList,
 } from "./MainStyledComponent";
 
 import copySvg from "../../images/copy.svg";
@@ -43,9 +47,13 @@ export const Main = () => {
               </button>
             </CopyNumber>
           </SubTitle>
-          <div style={{ marginTop: "30px" }}>
-            <ul style={{ display: "flex", gap: "60px" }}>
-              <li
+          <div
+            style={{
+              marginTop: "30px",
+            }}
+          >
+            <ListSvg>
+              <ListSvgItem
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img
@@ -54,8 +62,8 @@ export const Main = () => {
                   style={{ width: "34px", height: "34px" }}
                 ></img>
                 <Description>4/4</Description>
-              </li>
-              <li
+              </ListSvgItem>
+              <ListSvgItem
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img
@@ -64,8 +72,8 @@ export const Main = () => {
                   style={{ width: "34px", height: "34px" }}
                 ></img>
                 <Description>1</Description>
-              </li>
-              <li
+              </ListSvgItem>
+              <ListSvgItem
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img
@@ -74,8 +82,8 @@ export const Main = () => {
                   style={{ width: "34px", height: "34px" }}
                 ></img>
                 <Description>Automatik</Description>
-              </li>
-              <li
+              </ListSvgItem>
+              <ListSvgItem
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img
@@ -84,21 +92,16 @@ export const Main = () => {
                   style={{ width: "34px", height: "34px" }}
                 ></img>
                 <Description>103kW / 140PS</Description>
-              </li>
-            </ul>
+              </ListSvgItem>
+            </ListSvg>
           </div>
         </div>
-        <div>
-          <Price>49 338,00 €</Price>
-          <Paragraph>inkl. 19% MwSt.</Paragraph>
-          <ul
-            style={{
-              display: "flex",
-              marginTop: "40px",
-              gap: "30px",
-              justifyContent: "flex-end",
-            }}
-          >
+        <PriceInfo>
+          <Price>
+            49 338,00 €<Paragraph>inkl. 19% MwSt.</Paragraph>
+          </Price>
+
+          <SocialList>
             <li>
               <Link>
                 <img
@@ -126,8 +129,8 @@ export const Main = () => {
                 ></img>
               </Link>
             </li>
-          </ul>
-        </div>
+          </SocialList>
+        </PriceInfo>
       </AutoInfo>
       <Hero />
     </Container>

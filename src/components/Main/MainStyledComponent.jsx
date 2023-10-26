@@ -8,12 +8,20 @@ export const Container = styled.main`
 `;
 
 export const AutoInfo = styled.div`
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 335px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+  }
+
   @media screen and (min-width: 1400px) {
+    display: flex;
     width: 1070px;
   }
 `;
@@ -26,7 +34,26 @@ export const NameAuto = styled.h2`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 `;
+
+export const ListSvg = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 769px) {
+    gap: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+`;
+
+export const ListSvgItem = styled.li``;
 
 export const SubTitle = styled.div`
   display: flex;
@@ -85,4 +112,35 @@ export const Paragraph = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+
+  @media screen and (max-width: 1399px) {
+    text-align: start;
+  }
+`;
+
+export const PriceInfo = styled.div`
+  display: flex;
+
+  @media screen and (min-width: 335px) {
+    justify-content: space-between;
+
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 100%;
+    margin-top: 0;
+    flex-direction: column;
+  }
+`;
+
+export const SocialList = styled.ul`
+  display: flex;
+  margin-top: 40px;
+  gap: 30px;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 1399px) {
+    margin-top: 0;
+  }
 `;

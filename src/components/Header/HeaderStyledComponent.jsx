@@ -10,15 +10,15 @@ export const SectionHeader = styled.header`
   justify-content: space-between;
   border: 1px solid var(--Border-Color-Light, #dfe2ed);
   background: var(--Light-Color, #fff);
-
-  @media screen and (min-width: 335px) {
-    width: 100%;
-    padding: 20px 140px;
+  width: 100%;
+  padding: 20px 140px;
+  @media screen and (max-width: 768px) {
+    padding: 20px 60px;
   }
 `;
 
 export const SectionNav = styled.div`
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 969px) {
     display: none;
   }
 `;
@@ -44,13 +44,6 @@ export const StyledLink = styled(NavLink)`
   text-decoration: none;
 `;
 
-export const VerticalLine = styled.div`
-  display: block;
-  width: 1px;
-  align-self: stretch;
-  background: var(--Border-Color-Light, #dfe2ed);
-`;
-
 export const BurgerButton = styled.button`
   background: none;
   border: 0ch;
@@ -60,7 +53,7 @@ export const BurgerButton = styled.button`
   @media screen and (min-width: 335px) {
     display: block;
   }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 970px) {
     display: none;
   }
 `;
