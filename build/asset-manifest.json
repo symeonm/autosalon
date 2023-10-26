@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/autosalon/static/css/main.fd4df346.css",
+    "main.css": "/autosalon/static/css/main.742b4049.css",
     "main.js": "/autosalon/static/js/main.e9aa3748.js",
     "static/media/slide1.png": "/autosalon/static/media/slide1.6f7458255f4433d221f6.png",
     "static/media/slideLeft.png": "/autosalon/static/media/slideLeft.4e551a1f7d4655081515.png",
@@ -22,11 +22,11 @@
     "static/media/facebook.svg": "/autosalon/static/media/facebook.0ff2d8a52c5c122c1ac527778ca28ed3.svg",
     "static/media/check.svg": "/autosalon/static/media/check.219efbbd83774691c4ee12dbfa1a107c.svg",
     "static/media/chevron-down.svg": "/autosalon/static/media/chevron-down.f2d07f6f91494a36278d6f0bd7efe41c.svg",
-    "main.fd4df346.css.map": "/autosalon/static/css/main.fd4df346.css.map",
+    "main.742b4049.css.map": "/autosalon/static/css/main.742b4049.css.map",
     "main.e9aa3748.js.map": "/autosalon/static/js/main.e9aa3748.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd4df346.css",
+    "static/css/main.742b4049.css",
     "static/js/main.e9aa3748.js"
   ]
 }
