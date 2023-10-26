@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const AsideSidebar = styled.aside`
@@ -15,16 +16,6 @@ export const AsideSidebar = styled.aside`
   width: 100%;
 `;
 
-/* @media screen and (min-width: 335px) {
-  .sidebar.openSidebar {
-    max-width: 289px;
-    padding: 24px 32px;
-    height: 100%;
-    transform: translateX(0);
-    transition-duration: 1000ms;
-  }
-} */
-
 export const CloseBtn = styled.button`
   position: absolute;
   display: flex;
@@ -36,4 +27,21 @@ export const CloseBtn = styled.button`
   padding: 0;
 
   cursor: pointer;
+`;
+
+export const SidebarList = styled.ul`
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 60px;
+`;
+
+export const StyledLinkSidebar = styled(NavLink)`
+  color: var(--Dark-Color, #000);
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
 `;

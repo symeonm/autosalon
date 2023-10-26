@@ -1,7 +1,12 @@
 // import LogoutBtn from "./LogoutBtn/LogoutBtn";
 import { RxCross1 } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
-import { AsideSidebar, CloseBtn } from "./SidebarStyledComponent";
+
+import {
+  AsideSidebar,
+  CloseBtn,
+  SidebarList,
+  StyledLinkSidebar,
+} from "./SidebarStyledComponent";
 
 export default function SideBar({ toggleSidebar }) {
   return (
@@ -18,17 +23,44 @@ export default function SideBar({ toggleSidebar }) {
         />
       </CloseBtn>
       <nav>
-        <ul>
-          <li>
-            <NavLink>Konfigurator</NavLink>
+        <SidebarList>
+          <li
+            style={{
+              textAlign: "right",
+              borderBottomWidth: "1px",
+              borderBottomStyle: "solid",
+              borderBottomColor: "#DFE2ED",
+              paddingBottom: "30px",
+              paddingTop: "30px",
+            }}
+          >
+            <StyledLinkSidebar>Konfigurator</StyledLinkSidebar>
           </li>
-          <li>
-            <NavLink>Video-Archiv</NavLink>
+          <li
+            style={{
+              textAlign: "right",
+              borderBottomWidth: "1px",
+              borderBottomStyle: "solid",
+              borderBottomColor: "#DFE2ED",
+              paddingBottom: "30px",
+              paddingTop: "30px",
+            }}
+          >
+            <StyledLinkSidebar>Video-Archiv</StyledLinkSidebar>
           </li>
-          <li>
-            <NavLink>Kontakt</NavLink>
+          <li
+            style={{
+              textAlign: "right",
+              borderBottomWidth: "1px",
+              borderBottomStyle: "solid",
+              borderBottomColor: "#DFE2ED",
+              paddingBottom: "30px",
+              paddingTop: "30px",
+            }}
+          >
+            <StyledLinkSidebar>Kontakt</StyledLinkSidebar>
           </li>
-        </ul>
+        </SidebarList>
       </nav>
     </AsideSidebar>
   );
