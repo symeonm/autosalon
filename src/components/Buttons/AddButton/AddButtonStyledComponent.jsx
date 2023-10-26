@@ -13,3 +13,10 @@ export const ButtonAdd = styled.button`
     height: 60px;
   }
 `;
+
+export const AddImg = styled.img`
+  @media screen and (max-width: 970px) {
+    width: 25px;
+    height: 25px;
+  }
+`;

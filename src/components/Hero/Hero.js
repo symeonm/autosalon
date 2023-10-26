@@ -40,8 +40,6 @@ export const Hero = () => {
             src={slide2}
             alt="slide_image"
             style={{
-              // position: "absolute",
-              // left: "0px",
               width: "27%",
             }}
           />
@@ -50,10 +48,7 @@ export const Hero = () => {
             src={slide3}
             alt="slide_image"
             style={{
-              // position: "absolute",
-              // right: "0px",
               width: "27%",
-              // height: "100%",
             }}
           />
         </SwiperSlide>

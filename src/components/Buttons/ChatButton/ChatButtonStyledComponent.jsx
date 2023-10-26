@@ -14,3 +14,10 @@ export const ButtonChat = styled.button`
     height: 60px;
   }
 `;
+
+export const ChatImg = styled.img`
+  @media screen and (max-width: 970px) {
+    width: 30px;
+    height: 30px;
+  }
+`;
